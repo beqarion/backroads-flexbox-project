@@ -71,14 +71,14 @@ ul {
 a {
   text-decoration: none;
 }
-img {
-  width: 100%;
-  display: block;
-}
-/* img:not(.nav-logo) {
+/* img {
   width: 100%;
   display: block;
 } */
+img:not(.nav-logo) {
+  width: 100%;
+  display: block;
+}
 
 h1,
 h2,
@@ -176,6 +176,28 @@ p {
 Navbar
 ===============
 */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--clr-white);
+  box-shadow: var(--dark-shadow);
+  z-index: 2;
+}
+.nav-icons {
+  display: none;
+}
+.nav-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 /*
 =============== 
 Hero
@@ -519,3 +541,45 @@ Gallery
 Footer
 ===============
 */
+.footer {
+  background: var(--clr-grey-1);
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.footer-links,
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+.footer-link {
+  color: var(--clr-white);
+  text-transform: capitalize;
+  font-size: 1rem;
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+}
+li:not(:last-child) .footer-link {
+  margin-right: 1rem;
+}
+.footer-link:hover {
+  color: var(--clr-primary-5);
+}
+.footer-icon {
+  font-size: 2rem;
+  color: var(--clr-primary-8);
+  transition: var(--transition);
+}
+li:not(:last-child) .footer-icon {
+  margin-right: 1rem;
+}
+.footer-icon:hover {
+  color: var(--clr-primary-5);
+}
+.copyright {
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  color: var(--clr-white);
+}

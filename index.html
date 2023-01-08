@@ -18,15 +18,72 @@
   <!-- header  -->
   <header id="home">
     <!-- navbar -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="./images/logo.svg" class="nav-logo" alt="">
+          <button type="button" class="nav-toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- end of nav header -->
+        <!-- nav links -->
+        <ul class="nav-links" id="nav-links">
+          <!-- single link -->
+          <li><a href="#home" class="nav-link scroll-link">home</a></li>
+          <!-- end of single link -->
+          <!-- single link -->
+          <li><a href="#about" class="nav-link scroll-link">about</a></li>
+          <!-- end of single link -->
+          <!-- single link -->
+          <li><a href="#services" class="nav-link scroll-link">services</a></li>
+          <!-- end of single link -->
+          <!-- single link -->
+          <li><a href="#featured" class="nav-link scroll-link">featured</a></li>
+          <!-- end of single link -->
+          <!-- single link -->
+          <li><a href="#gallery" class="nav-link scroll-link">gallery</a></li>
+          <!-- end of single link -->
+        </ul>
+        <!-- end of nav links -->
+        <!-- nav icons -->
+        <ul class="nav-icons">
+          <!-- single icon -->
+          <li>
+            <a href="https://www.facebook.com" target="_blank" class="nav-icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <!-- end of single icon -->
+          <!-- single icon -->
+          <li>
+            <a href="https://www.facebook.com" target="_blank" class="nav-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <!-- end of single icon -->
+          <!-- single icon -->
+          <li>
+            <a href="https://www.facebook.com" target="_blank" class="nav-icon">
+              <i class="fab fa-squarespace"></i>
+            </a>
+          </li>
+          <!-- end of single icon -->
+        </ul>
+        <!-- end of nav icons -->
+      </div>
+    </nav>
     <!-- hero -->
     <div class="hero">
       <div class="hero-banner">
         <h1>continue exploring</h1>
-        <p>Lorem ipsum dolor sit amet consectetur,
+        <p>
+          Lorem ipsum dolor sit amet consectetur,
           adipisicing elit. Ad
-          recusandae soluta qui et ducimus delectus.</p>
-        <a href="#featured" class="btn hero-btn scroll-link">explore
-          tours</a>
+          recusandae soluta qui et ducimus delectus.
+        </p>
+        <a href="#featured" class="btn hero-btn scroll-link">explore tours</a>
       </div>
     </div>
   </header>
@@ -385,12 +442,15 @@
       <!-- single icon -->
       <li>
         <a href="https://www.facebook.com" target="_blank" class="footer-icon">
-          <i class="fab fa-facebook"></i>
+          <i class="fab fa-squarespace"></i>
         </a>
       </li>
       <!-- end of single icon -->
     </ul>
     <!-- end of footer icons -->
+    <p class="copyright">
+      copyright &copy; backroads travel tours company <span id="date"></span>. all rights reserved
+    </p>
   </footer>
   <!-- js -->
   <script src="./js/app.js"></script>
